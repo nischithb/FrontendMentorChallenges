@@ -16,6 +16,7 @@
 
 body {
   margin: 0;
+  padding: 1.5rem;
   background-color: var(--yellow);
   min-height: 100vh;
   display: flex;
@@ -30,7 +31,7 @@ main {
 }
 
 .card {
-  width: 380px;
+  max-width: 380px;
   padding: 1.5rem;
   border: solid 1px var(--gray-950);
   border-radius: 20px;
@@ -38,12 +39,12 @@ main {
   box-shadow: 8px 8px var(--gray-950);
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 .card__img {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 1.5rem;
 }
 
 .card__body {
@@ -51,11 +52,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 0.75rem;
 }
 
 .card__tag {
   padding: 4px 12px;
-  margin-bottom: 0.75rem;
   border-radius: 0.25rem;
   font-weight: 800;
   font-size: 14px;
@@ -65,14 +66,17 @@ main {
 .card__published {
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 0.75rem;
 }
 
 .card__title {
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 150%;
-  margin-bottom: 0.75rem;
+}
+
+.card__title:hover {
+  color: var(--yellow);
+  cursor: pointer;
 }
 
 .card__description {
@@ -80,13 +84,13 @@ main {
   font-weight: 500;
   font-size: 1rem;
   line-height: 150%;
-  margin-bottom: 1.5rem;
 }
 
 .author {
   display: flex;
   justify-content: start;
   align-items: center;
+  gap: 0.75rem;
 }
 
 .author > img {
@@ -97,11 +101,9 @@ main {
 .author__name {
   font-size: 14px;
   font-weight: 800;
-  margin-left: 0.75rem;
 }
 
 .attribution {
-  margin-bottom: 20px;
   font-size: 1rem;
   text-align: center;
 }
